@@ -1,1 +1,118 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ülvi — Sistem İnzibatçısı</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#fff;color:#111;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{max-width:1080px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid #eee;z-index:10}
+nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-size:22px;font-weight:800;letter-spacing:-.5px}
+.logo span{color:#2563eb}
+.menu{display:flex;gap:28px;font-weight:600;font-size:15px}
+.menu a:hover{color:#2563eb}
+.burger{display:none;font-size:26px;background:none;border:0;cursor:pointer}
+.hero{padding:84px 0 72px;text-align:left}
+.hero h1{font-size:56px;line-height:1.05;letter-spacing:-1.5px;margin-bottom:16px}
+.hero p{font-size:19px;color:#444;max-width:620px;margin-bottom:28px}
+.btn{display:inline-block;background:#2563eb;color:#fff!important;padding:14px 26px;border-radius:999px;font-weight:700;font-size:16px}
+.btn:hover{background:#1d4ed8}
+.section{padding:56px 0}
+.section h2{font-size:32px;letter-spacing:-.5px;margin-bottom:8px}
+.section .sub{color:#555;margin-bottom:28px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.card{border:1px solid #e9e9e9;border-radius:18px;padding:26px;background:#fff;box-shadow:0 4px 20px rgba(0,0,0,.03)}
+.card h3{font-size:20px;margin-bottom:10px}
+.card p{color:#444;font-size:15.5px}
+.tag{display:inline-block;background:#eff6ff;color:#2563eb;font-size:12px;font-weight:700;padding:5px 10px;border-radius:999px;margin-bottom:14px}
+.post{border:1px solid #e9e9e9;border-radius:18px;padding:28px}
+.post h3{font-size:22px;margin-bottom:10px}
+.post p{color:#444}
+.post .meta{font-size:13px;color:#888;margin-bottom:12px}
+.contact-box{background:#f8fafc;border:1px solid #eef2f7;border-radius:20px;padding:32px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.contact-box h3{font-size:24px;margin-bottom:6px}
+.contact-box p{color:#555}
+footer{border-top:1px solid #eee;padding:28px 0;text-align:center;color:#666;font-size:14px;margin-top:20px}
+@media(max-width:720px){
+.menu{display:none;position:absolute;top:68px;left:0;right:0;background:#fff;flex-direction:column;padding:16px 20px;border-bottom:1px solid #eee}
+.menu.open{display:flex}
+.burger{display:block}
+.hero{padding:56px 0 48px}
+.hero h1{font-size:40px}
+.grid{grid-template-columns:1fr}
+.contact-box{flex-direction:column;align-items:flex-start}
+}
+</style>
+</head>
+<body>
 
+<header>
+  <div class="container">
+    <nav>
+      <a href="#" class="logo">Ülvi<span>.</span></a>
+      <div class="menu" id="menu">
+        <a href="#">Ana səhifə</a>
+        <a href="#isler">Gördüyüm işlər</a>
+        <a href="#yazilar">Yazılarım</a>
+        <a href="#elaqe">Əlaqə</a>
+      </div>
+      <button class="burger" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <h1>Salam, mən Ülvi</h1>
+    <p>Windows Server, Linux, Hyper-V, VMware ilə işləyirəm.</p>
+    <a href="#elaqe" class="btn">Əlaqə saxla</a>
+  </section>
+
+  <section class="section" id="isler">
+    <h2>Gördüyüm işlər</h2>
+    <p class="sub">Real layihələrdə etdiyim işlər</p>
+    <div class="grid">
+      <div class="card">
+        <span class="tag">HYPER-V</span>
+        <h3>Server köçürmə — Hyper-V</h3>
+        <p>Fiziki serverin Hyper-V mühitinə köçürülməsi, performans və təhlükəsizlik optimallaşdırması.</p>
+      </div>
+      <div class="card">
+        <span class="tag">BACKUP</span>
+        <h3>Backup sistemi qurdum</h3>
+        <p>Avtomatik gündəlik backup, saxlama və bərpa prosesinin qurulması.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="yazilar">
+    <h2>Yazılarım</h2>
+    <p class="sub">Öyrəndiklərim və təcrübəm</p>
+    <article class="post">
+      <div class="meta">Ülvi • Öyrənmə qeydləri</div>
+      <h3>【entity-Exness¦canonical_name=Exness】-də Gold ilə necə öyrənirəm...</h3>
+      <p>Mənim öyrənmə prosesim, risklərin idarə olunması və təcrübəmdən qısa qeydlər.</p>
+    </article>
+  </section>
+
+  <section class="section" id="elaqe">
+    <div class="contact-box">
+      <div>
+        <h3>Birlikdə işləyək?</h3>
+        <p>Server, virtualizasiya və backup ilə bağlı sualın varsa, yaz.</p>
+      </div>
+      <a href="mailto:ulvi@example.com" class="btn">Əlaqə saxla</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">© 2026 Ülvi</div>
+</footer>
+
+</body>
+</html>
