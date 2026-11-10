@@ -31,13 +31,13 @@ nav{display:flex;align-items:center;justify-content:space-between;height:70px}
 .btn-blue{background:var(--blue);color:#fff;box-shadow:0 10px 25px rgba(37,99,235,.3)}
 .btn-wa{background:#22c55e;color:#fff;box-shadow:0 10px 25px rgba(34,197,94,.3)}
 .skills{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
-.skills a,.skills span{padding:8px 14px;border-radius:999px;font-size:13px;font-weight:600}
-.skills a:nth-child(1){background:#eff6ff;color:#1d4ed8}
-.skills a:nth-child(2){background:#fef3c7;color:#92400e}
-.skills a:nth-child(3){background:#f5f3ff;color:#6d28d9}
-.skills a:nth-child(4){background:#ecfdf5;color:#047857}
-.skills a:nth-child(5){background:#fff1f2;color:#be123c}
-.skills a:nth-child(6){background:#f1f5f9;color:#334155}
+.skills a{padding:8px 14px;border-radius:999px;font-size:13px;font-weight:600}
+.skills a:nth-child(1){background:#f1f5f9;color:#334155}
+.skills a:nth-child(2){background:#eff6ff;color:#1d4ed8}
+.skills a:nth-child(3){background:#fef3c7;color:#92400e}
+.skills a:nth-child(4){background:#f5f3ff;color:#6d28d9}
+.skills a:nth-child(5){background:#ecfdf5;color:#047857}
+.skills a:nth-child(6){background:#fff1f2;color:#be123c}
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:42px 0 0}
 .stat{background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px}
 .stat b{font-size:28px;letter-spacing:-1px;display:block}
@@ -105,12 +105,12 @@ footer{padding:28px 0 34px;border-top:1px solid var(--line);display:flex;justify
 <h1>Salam, mən <span>Ülvi</span></h1>
 <div class="hero-subtitle">Sistem və şəbəkə üzrə administrator</div>
 <div class="skills">
+<a href="#teklifler">🔧 Fiziki Server / iLO</a>
 <a href="#teklifler">🖥️ Windows Server</a>
 <a href="#teklifler">🐧 Linux</a>
 <a href="#teklifler">⚡ Hyper-V</a>
 <a href="#teklifler">☁️ VMware</a>
 <a href="#teklifler">🔶 Proxmox</a>
-<a href="#fiziki">🔧 Fiziki Server / iLO</a>
 </div>
 <div class="stats">
 <div class="stat"><b>4+</b><i>Əsas texnologiya</i></div>
@@ -145,25 +145,13 @@ footer{padding:28px 0 34px;border-top:1px solid var(--line);display:flex;justify
 <section class="section" id="teklifler">
 <div class="sec-head"><div class="eyebrow">Təkliflər</div><h2>Müştərilərə təkliflərim</h2><p>Sizin üçün nə edə bilərəm?</p></div>
 <div class="grid3">
-<article class="card offer"><div class="icon">🖥️</div><h3>Windows Server quraşdırma</h3><p>Active Directory, DNS, DHCP, File Server, Group Policy quraşdırma və konfiqurasiya.</p><div class="price">✓ Tam konfiqurasiya</div><br><a class="btn-mini" href="https://wa.me/994507591479?text=Salam%20Ülvi%2C%20Windows%20Server%20üçün%20yazıram">Sifariş et →</a></article>
-<article class="card offer"><div class="icon">🐧</div><h3>Linux Server</h3><p>Ubuntu / Debian server quraşdırma, web server, təhlükəsizlik və optimallaşdırma.</p><div class="price">✓ Təhlükəsiz konfiqurasiya</div><br><a class="btn-mini" href="https://wa.me/994507591479?text=Salam%20Ülvi%2C%20Linux%20üçün%20yazıram">Sifariş et →</a></article>
-<article class="card offer"><div class="icon">☁️</div><h3>VMware / Hyper-V / Proxmox</h3><p>Virtualizasiya mühiti qururam. Fiziki serveri VMware, Hyper-V və ya Proxmox-a köçürürəm.</p><div class="price">✓ Performans artımı</div><br><a class="btn-mini" href="https://wa.me/994507591479?text=Salam%20Ülvi%2C%20Virtualizasiya%20üçün%20yazıram">Sifariş et →</a></article>
-<article class="card offer"><div class="icon">💾</div><h3>Backup və Bərpa</h3><p>Avtomatik gündəlik backup sistemi. Məlumat itkisinin qarşısını alıram, bərpanı test edirəm.</p><div class="price">✓ Avtomatik işləyir</div><br><a class="btn-mini" href="https://wa.me/994507591479?text=Salam%20Ülvi%2C%20Backup%20üçün%20yazıram">Sifariş et →</a></article>
-<article class="card offer"><div class="icon">🌐</div><h3>Şəbəkə quraşdırma</h3><p>Ofis şəbəkəsi, Router / Switch konfiqurasiyası, Wi-Fi, printer və istifadəçi bağlantıları.</p><div class="price">✓ Stabil şəbəkə</div><br><a class="btn-mini" href="https://wa.me/994507591479?text=Salam%20Ülvi%2C%20Şəbəkə%20üçün%20yazıram">Sifariş et →</a></article>
-<article class="card offer"><div class="icon">🛡️</div><h3>Texniki dəstək</h3><p>Server donur, şəbəkə kəsilir, backup işləmir? Problemi tapıb tez həll edirəm.</p><div class="price">✓ Tez müdaxilə</div><br><a class="btn-mini" href="https://wa.me/994507591479?text=Salam%20Ülvi%2C%20texniki%20dəstək%20lazımdır">Sifariş et →</a></article>
-</div>
-</section>
-
-<section class="section" id="fiziki">
-<div class="sec-head"><div class="eyebrow">Fiziki Server</div><h2>Fiziki Server / iLO</h2><p>【entity-HP¦canonical_name=HP】 serverlərlə işləyirəm</p></div>
-<div class="grid">
-<article class="card" style="grid-column:span 2">
-<div class="icon">🔧</div>
-<h3>【entity-HP¦canonical_name=HP】 Fiziki Server — iLO İdarəetmə</h3>
-<p>Mən ancaq <b>【entity-HP¦canonical_name=HP】 / HPE</b> fiziki serverlərlə işləmişəm. Serverin uzaqdan idarə olunması, monitorinqi və nasazlıqların həlli üçün <b>HPE iLO</b> ilə işləyirəm.</p>
-<ul><li>HPE / 【entity-HP¦canonical_name=HP】</li><li>HPE iLO</li><li>Remote İdarəetmə</li><li>RAID / Disk</li><li>BIOS / Firmware Update</li><li>Hardware Diaqnostika</li></ul>
-<div style="margin-top:18px"><a href="https://wa.me/994507591479?text=Salam%20Ülvi%2C%20HP%20Fiziki%20Server%20üçün%20yazıram" style="font-weight:700;color:#2563eb">【entity-HP¦canonical_name=HP】 Server üçün yaz →</a></div>
-</article>
+<article class="card offer"><div class="icon">🔧</div><h3>Fiziki Server / iLO</h3><p>Ancaq 【entity-HP¦canonical_name=HP】 / HPE fiziki serverlərlə işləyirəm. HPE iLO ilə uzaqdan idarəetmə, RAID, BIOS / Firmware update və hardware diaqnostika.</p><div class="price">✓ 【entity-HP¦canonical_name=HP】 / HPE - iLO</div><br><a class="btn-mini" href="https://wa.me/994507591479?text=Salam%20Ulvi%2C%20HP%20Fiziki%20Server%20ucun%20yaziram">Sifariş et →</a></article>
+<article class="card offer"><div class="icon">🖥️</div><h3>Windows Server quraşdırma</h3><p>Active Directory, DNS, DHCP, File Server, Group Policy quraşdırma və konfiqurasiya.</p><div class="price">✓ Tam konfiqurasiya</div><br><a class="btn-mini" href="https://wa.me/994507591479?text=Salam%20Ulvi%2C%20Windows%20Server%20ucun%20yaziram">Sifariş et →</a></article>
+<article class="card offer"><div class="icon">🐧</div><h3>Linux Server</h3><p>Ubuntu / Debian server quraşdırma, web server, təhlükəsizlik və optimallaşdırma.</p><div class="price">✓ Təhlükəsiz konfiqurasiya</div><br><a class="btn-mini" href="https://wa.me/994507591479?text=Salam%20Ulvi%2C%20Linux%20ucun%20yaziram">Sifariş et →</a></article>
+<article class="card offer"><div class="icon">☁️</div><h3>VMware / Hyper-V / Proxmox</h3><p>Virtualizasiya mühiti qururam. Fiziki serveri VMware, Hyper-V və ya Proxmox-a köçürürəm.</p><div class="price">✓ Performans artımı</div><br><a class="btn-mini" href="https://wa.me/994507591479?text=Salam%20Ulvi%2C%20Virtualizasiya%20ucun%20yaziram">Sifariş et →</a></article>
+<article class="card offer"><div class="icon">💾</div><h3>Backup və Bərpa</h3><p>Avtomatik gündəlik backup sistemi. Məlumat itkisinin qarşısını alıram, bərpanı test edirəm.</p><div class="price">✓ Avtomatik işləyir</div><br><a class="btn-mini" href="https://wa.me/994507591479?text=Salam%20Ulvi%2C%20Backup%20ucun%20yaziram">Sifariş et →</a></article>
+<article class="card offer"><div class="icon">🌐</div><h3>Şəbəkə quraşdırma</h3><p>Ofis şəbəkəsi, Router / Switch konfiqurasiyası, Wi-Fi, printer və istifadəçi bağlantıları.</p><div class="price">✓ Stabil şəbəkə</div><br><a class="btn-mini" href="https://wa.me/994507591479?text=Salam%20Ulvi%2C%20Sebeke%20ucun%20yaziram">Sifariş et →</a></article>
+<article class="card offer"><div class="icon">🛡️</div><h3>Texniki dəstək</h3><p>Server donur, şəbəkə kəsilir, backup işləmir? Problemi tapıb tez həll edirəm.</p><div class="price">✓ Tez müdaxilə</div><br><a class="btn-mini" href="https://wa.me/994507591479?text=Salam%20Ulvi%2C%20texniki%20destek%20lazimdir">Sifariş et →</a></article>
 </div>
 </section>
 
@@ -172,7 +160,7 @@ footer{padding:28px 0 34px;border-top:1px solid var(--line);display:flex;justify
 <div><h3>Birlikdə işləyək?</h3><p>Server, virtualizasiya və backup ilə bağlı sualın varsa, zəng et və ya yaz.</p><p style="font-size:20px;font-weight:800;color:#fff;margin-top:10px">050 759 14 79</p></div>
 <div class="contact-btns">
 <a href="tel:+994507591479" class="btn">📞 İndi zəng et</a>
-<a href="https://wa.me/994507591479?text=Salam%20Ülvi%2C%20saytınızdan%20yazıram" target="_blank" class="btn btn-wa">💬 WhatsApp-da yaz</a>
+<a href="https://wa.me/994507591479?text=Salam%20Ulvi%2C%20saytinizdan%20yaziram" target="_blank" class="btn btn-wa">💬 WhatsApp-da yaz</a>
 </div>
 </div>
 </section>
