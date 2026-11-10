@@ -22,27 +22,24 @@ nav{display:flex;align-items:center;justify-content:space-between;height:70px}
 .menu a:hover,.menu a.active{background:#eff6ff;color:var(--blue)}
 .nav-btn{background:var(--dark);color:#fff;padding:10px 18px;border-radius:999px;font-weight:700;font-size:14px}
 .burger{display:none;font-size:24px;background:none;border:0;cursor:pointer}
-.hero{padding:148px 0 60px;position:relative}
+.hero{padding:148px 0 40px;position:relative}
 .hero:before{content:"";position:absolute;inset:0;background:radial-gradient(600px 300px at 85% 0%,#dbeafe 0%,transparent 60%),radial-gradient(500px 300px at 5% 20%,#ede9fe 0%,transparent 60%);z-index:-1}
 .badge{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);box-shadow:0 4px 20px rgba(0,0,0,.05);padding:8px 13px;border-radius:999px;font-size:13px;font-weight:600}
 .dot{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px #dcfce7}
-.hero h1{font-size:64px;line-height:.98;letter-spacing:-2.5px;margin:22px 0 16px;font-weight:900}
+.hero h1{font-size:64px;line-height:1;letter-spacing:-2.5px;margin:22px 0 10px;font-weight:900}
 .hero h1 span{background:linear-gradient(90deg,#2563eb,#7c3aed);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.hero p{font-size:19px;color:var(--muted);max-width:640px}
-.hero p b{color:var(--dark)}
+.hero-subtitle{font-size:28px;font-weight:700;letter-spacing:-.5px;color:#334155}
 .btns{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}
 .btn{padding:15px 26px;border-radius:999px;font-weight:700;font-size:15px;display:inline-flex;align-items:center;gap:8px}
 .btn-blue{background:var(--blue);color:#fff;box-shadow:0 10px 25px rgba(37,99,235,.3)}
-.btn-blue:hover{background:#1d4ed8;transform:translateY(-1px)}
-.btn-ghost{background:#fff;border:1px solid var(--line);color:var(--dark)}
 .btn-wa{background:#22c55e;color:#fff;box-shadow:0 10px 25px rgba(34,197,94,.3)}
-.btn-wa:hover{background:#16a34a;transform:translateY(-1px)}
-.skills{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.btn-ghost{background:#fff;border:1px solid var(--line);color:var(--dark)}
+.skills{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
 .skills span{background:#0f172a;color:#fff;padding:8px 14px;border-radius:999px;font-size:13px;font-weight:600}
 .skills span:nth-child(2){background:#eff6ff;color:#1d4ed8}
 .skills span:nth-child(3){background:#f5f3ff;color:#6d28d9}
 .skills span:nth-child(4){background:#ecfdf5;color:#047857}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:50px 0 0}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:42px 0 0}
 .stat{background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px}
 .stat b{font-size:28px;letter-spacing:-1px;display:block}
 .stat i{font-style:normal;font-size:13.5px;color:var(--muted);font-weight:500}
@@ -52,17 +49,22 @@ nav{display:flex;align-items:center;justify-content:space-between;height:70px}
 .sec-head p{color:var(--muted);margin-top:6px}
 .eyebrow{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:2px;color:var(--blue);font-weight:700;text-transform:uppercase;margin-bottom:8px}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px}
 .card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px;position:relative;overflow:hidden;transition:.25s}
 .card:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(15,23,42,.08);border-color:#cbd5e1}
 .card:before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#2563eb,#7c3aed)}
 .card:nth-child(2):before{background:linear-gradient(90deg,#059669,#06b6d4)}
 .icon{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;font-size:24px;margin-bottom:16px;background:#eff6ff}
-.card:nth-child(2) .icon{background:#ecfdf5}
 .card h3{font-size:21px;margin-bottom:8px}
 .card p{color:#475569;font-size:15px}
 .card ul{list-style:none;margin-top:16px;display:flex;flex-wrap:wrap;gap:8px}
 .card ul li{background:#f1f5f9;padding:6px 11px;border-radius:999px;font-size:12.5px;font-weight:600;color:#334155}
 .arrow{margin-top:18px;font-weight:700;color:var(--blue);font-size:14px}
+.offer{padding:24px}
+.offer h3{font-size:19px}
+.offer p{font-size:14.5px}
+.offer .price{margin-top:16px;font-size:13px;font-weight:700;color:#059669;background:#ecfdf5;display:inline-block;padding:6px 11px;border-radius:999px}
+.offer .btn-mini{display:inline-block;margin-top:16px;font-weight:700;color:var(--blue);font-size:14px}
 .contact{margin:70px 0 20px;background:linear-gradient(135deg,#2563eb,#7c3aed);border-radius:28px;padding:36px;color:#fff;display:flex;justify-content:space-between;align-items:center;gap:20px}
 .contact h3{font-size:28px;letter-spacing:-.5px}
 .contact p{color:#dbeafe;margin-top:6px}
@@ -78,8 +80,9 @@ footer{padding:28px 0 34px;border-top:1px solid var(--line);display:flex;justify
 .nav-btn{display:none}
 .hero{padding-top:120px}
 .hero h1{font-size:44px}
+.hero-subtitle{font-size:22px}
 .stats{grid-template-columns:1fr 1fr}
-.grid{grid-template-columns:1fr}
+.grid,.grid3{grid-template-columns:1fr}
 .contact{flex-direction:column;align-items:flex-start}
 .contact-btns{width:100%}
 .sec-head{flex-direction:column;align-items:flex-start}
@@ -94,6 +97,7 @@ footer{padding:28px 0 34px;border-top:1px solid var(--line);display:flex;justify
 <div class="menu" id="menu">
 <a href="#" class="active">Ana səhifə</a>
 <a href="#isler">Gördüyüm işlər</a>
+<a href="#teklifler">Təkliflər</a>
 <a href="#elaqe">Əlaqə</a>
 </div>
 <a href="tel:+994507591479" class="nav-btn">📞 Zəng et</a>
@@ -104,13 +108,8 @@ footer{padding:28px 0 34px;border-top:1px solid var(--line);display:flex;justify
 <main class="container">
 <section class="hero">
 <span class="badge"><span class="dot"></span> Yeni layihələr üçün açığam • Baku, Azərbaycan</span>
-<h1>Salam, mən <span>Ülvi</span><br>Sistem və şəbəkə üzrə<br>administrator</h1>
-<p><b>Windows Server, Linux, Hyper-V, VMware</b> ilə işləyirəm. Serverləri köçürürəm, backup-u avtomatlaşdırıram, sistemin dayanmadan işləməsini təmin edirəm.</p>
-<div class="btns">
-<a href="tel:+994507591479" class="btn btn-blue">📞 Zəng et</a>
-<a href="https://wa.me/994507591479?text=Salam%20%C3%9Clvi%2C%20sayt%C4%B1n%C4%B1zdan%20yaz%C4%B1ram" target="_blank" class="btn btn-wa">💬 WhatsApp-da yaz</a>
-<a href="#isler" class="btn btn-ghost">İşlərimə bax</a>
-</div>
+<h1>Salam, mən <span>Ülvi</span></h1>
+<div class="hero-subtitle">Sistem və şəbəkə üzrə administrator</div>
 <div class="skills"><span>🖥️ Windows Server</span><span>🐧 Linux</span><span>⚡ Hyper-V</span><span>☁️ VMware</span></div>
 
 <div class="stats">
@@ -140,6 +139,18 @@ footer{padding:28px 0 34px;border-top:1px solid var(--line);display:flex;justify
 <ul><li>Avtomatik Backup</li><li>Gündəlik</li><li>Bərpa Testi</li></ul>
 <div class="arrow">Layihəyə bax →</div>
 </article>
+</div>
+</section>
+
+<section class="section" id="teklifler">
+<div class="sec-head"><div><div class="eyebrow">Təkliflər</div><h2>Müştərilərə təkliflərim</h2><p>Sizin üçün nə edə bilərəm?</p></div></div>
+<div class="grid3">
+<article class="card offer"><div class="icon">🖥️</div><h3>Windows Server quraşdırma</h3><p>Active Directory, DNS, DHCP, File Server, Group Policy quraşdırma və konfiqurasiya.</p><div class="price">✓ 1 günə təhvil</div><br><a class="btn-mini" href="https://wa.me/994507591479?text=Salam%20%C3%9Clvi%2C%20Windows%20Server%20qura%C5%9Fd%C4%B1rma%20%C3%BC%C3%A7%C3%BCn%20yaz%C4%B1ram">Sifariş et →</a></article>
+<article class="card offer"><div class="icon">🐧</div><h3>Linux Server</h3><p>Ubuntu / Debian server quraşdırma, web server, təhlükəsizlik və optimallaşdırma.</p><div class="price">✓ Təhlükəsiz konfiqurasiya</div><br><a class="btn-mini" href="https://wa.me/994507591479?text=Salam%20%C3%9Clvi%2C%20Linux%20Server%20%C3%BC%C3%A7%C3%BCn%20yaz%C4%B1ram">Sifariş et →</a></article>
+<article class="card offer"><div class="icon">⚡</div><h3>Hyper-V / VMware</h3><p>Virtualizasiya mühiti qururam. Fiziki serveri virtuala köçürürəm, resursları optimallaşdırıram.</p><div class="price">✓ Performans artımı</div><br><a class="btn-mini" href="https://wa.me/994507591479?text=Salam%20%C3%9Clvi%2C%20Virtualizasiya%20%C3%BC%C3%A7%C3%BCn%20yaz%C4%B1ram">Sifariş et →</a></article>
+<article class="card offer"><div class="icon">💾</div><h3>Backup və Bərpa</h3><p>Avtomatik gündəlik backup sistemi. Məlumat itkisinin qarşısını alıram, bərpanı test edirəm.</p><div class="price">✓ Avtomatik işləyir</div><br><a class="btn-mini" href="https://wa.me/994507591479?text=Salam%20%C3%9Clvi%2C%20Backup%20sistemi%20%C3%BC%C3%A7%C3%BCn%20yaz%C4%B1ram">Sifariş et →</a></article>
+<article class="card offer"><div class="icon">🌐</div><h3>Şəbəkə quraşdırma</h3><p>Ofis şəbəkəsi, Router / Switch konfiqurasiyası, Wi-Fi, printer və istifadəçi bağlantıları.</p><div class="price">✓ Stabil şəbəkə</div><br><a class="btn-mini" href="https://wa.me/994507591479?text=Salam%20%C3%9Clvi%2C%20%C5%9E%C9%99b%C9%99k%C9%99%20qura%C5%9Fd%C4%B1rma%20%C3%BC%C3%A7%C3%BCn%20yaz%C4%B1ram">Sifariş et →</a></article>
+<article class="card offer"><div class="icon">🛡️</div><h3>Texniki dəstək</h3><p>Server donur, şəbəkə kəsilir, backup işləmir? Problemi tapıb tez həll edirəm.</p><div class="price">✓ Tez müdaxilə</div><br><a class="btn-mini" href="https://wa.me/994507591479?text=Salam%20%C3%9Clvi%2C%20texniki%20d%C9%99st%C9%99k%20laz%C4%B1md%C4%B1r">Sifariş et →</a></article>
 </div>
 </section>
 
